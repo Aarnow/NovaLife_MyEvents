@@ -20,11 +20,10 @@ D'autres événements peuvent s'ajouter à ce plugin avec le temps.
 Le Plugin MyEvents doit être ajouté en tant que référence à votre projet.
 
 ```csharp
-/*	Créer une classe héritant de "Events"
-*	Appeler les événements que vous souhaitez
-*/  Exemple:
+//	Créer une classe héritant de "Events"
+//	Appeler les événements que vous souhaitez
 
-public class YourClasse : Events
+public class YourClass : Events
 {
     public override void OnPlayerSpawnCharacter(Player player)
     {
@@ -33,9 +32,8 @@ public class YourClasse : Events
     }
 }
 
-/*  Instancier votre classe contenant vos événements
-*   Utiliser la fonction Init de votre instance lors de l'initialisation de votre plugin
-*/  Exemple:
+//  Instancier votre classe contenant vos événements
+//  Utiliser la fonction Init de votre instance lors de l'initialisation de votre plugin
 
 public class Main : Plugin
 {
